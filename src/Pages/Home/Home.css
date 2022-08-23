@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color:#1f1432;
+  }
+img#banner{
+    max-width: 100%;
+    height: auto;
+  
+    
+  }
+  img#abu{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border-radius: 30px;
+  }
+  h2#us{
+    font-weight: 900;
+    text-align: center;
+    text-decoration:underline ;
+    font-size:xx-large;
+    margin-top: 30px;
+    color:white;
+  
+  }
+  
+  div#us{
+    
+    color: white;
+  }
+  
+  footer{
+    background-color: rgb(18, 18, 19);
+    
+    
+    
+    
+    
+  }
+  
+  
+  
+  img#logonav{
+    width: 40px;
+    height: 40px;
+  }
+  li#navitem{
+    color: white;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+  
+   
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
