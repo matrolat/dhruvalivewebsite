@@ -1,6 +1,5 @@
-import React, { Component, button } from 'react'
+import React, { Component, button,alert } from 'react'
 import './QuizCard.css'
-
 export default class QuizCard extends Component {
     
 
@@ -38,6 +37,7 @@ export default class QuizCard extends Component {
                 optionC: optionC,
                 optionD: optionD,
                 ans: Ans,
+                data:""
               });
 
             },
@@ -282,6 +282,46 @@ export default class QuizCard extends Component {
                 score++;
             }
         }
+        var Data2={
+            "name":this.props.name,
+            "email":this.props.email,
+            "score":score,
+
+        };
+        console.log(JSON.stringify(Data2))
+        fetch('https://dyplibmaster.000webhostapp.com/Dhruva/InsertScore.php', {
+            method: "POST",
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json',
+              'Cache-Control': 'no-cache'
+            },
+            mode:'cors',
+            body: JSON.stringify(Data2)
+           
+          })
+          .then(response => response.json())
+          .then(responseJson => {
+            console.log(responseJson);
+            //   this.setState({
+            //       data: JSON.stringify(json)
+            //     });
+              //   Alert.alert(this.state.data);
+            //   setTimeout(function(){
+            //       alert("You can start Quiz"); 
+            //  }, 1000);
+               
+            return responseJson.data;
+  
+          })
+          .catch((error) => {
+            //   alert("Invalid Data");
+            console.error(error);
+          });
+
+
+
+
         console.log("score:"+ score)
     }
     let current = this.state.current;
@@ -311,6 +351,9 @@ export default class QuizCard extends Component {
         <button className="opt" id="submit" onClick={SubmitHandler}><span>Submit</span></button>
         </div>
         
+
+
+
 
       </div>
     )
