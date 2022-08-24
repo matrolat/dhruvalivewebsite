@@ -14,6 +14,7 @@ function App() {
       <Navbar />
       <div className="container">
         <Routes>
+        <Route  path="/dhruvalivewebsite" element={<Home />} />
           <Route path="/" element={<Home/>} />
           <Route path="/quiz" element={<Quiz/>} />
           <Route path="/team" element={<Team/>} />
