@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dhruvalivewebsite/static/css/main.6ee32e82.css",
-    "main.js": "/dhruvalivewebsite/static/js/main.5b65def3.js",
+    "main.js": "/dhruvalivewebsite/static/js/main.114f355c.js",
     "static/js/787.33bbf241.chunk.js": "/dhruvalivewebsite/static/js/787.33bbf241.chunk.js",
     "static/media/MEMBERS SPECIAL DISCOUNT (1).jpg": "/dhruvalivewebsite/static/media/MEMBERS SPECIAL DISCOUNT (1).f53db543a9b76099a79f.jpg",
     "static/media/DHRUVA BANNER.jpg": "/dhruvalivewebsite/static/media/DHRUVA BANNER.be7027a854517d88f71b.jpg",
@@ -17,11 +17,11 @@
     "static/media/EVENTST2.png": "/dhruvalivewebsite/static/media/EVENTST2.ac0d69e02773ccbf28ac.png",
     "index.html": "/dhruvalivewebsite/index.html",
     "main.6ee32e82.css.map": "/dhruvalivewebsite/static/css/main.6ee32e82.css.map",
-    "main.5b65def3.js.map": "/dhruvalivewebsite/static/js/main.5b65def3.js.map",
+    "main.114f355c.js.map": "/dhruvalivewebsite/static/js/main.114f355c.js.map",
     "787.33bbf241.chunk.js.map": "/dhruvalivewebsite/static/js/787.33bbf241.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6ee32e82.css",
-    "static/js/main.5b65def3.js"
+    "static/js/main.114f355c.js"
   ]
 }
