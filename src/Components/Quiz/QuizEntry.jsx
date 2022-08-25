@@ -12,8 +12,8 @@ export default class QuizEntry extends Component {
 
         render() {
     return (
-      <div className='quiz-container' style={{display:"flex",justifyContent:"center"}}>
-        <h1>
+      <div className='quiz-container'  style={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:'column'}}>
+        <h1 id='thanku'>
             Astronomy Quiz
         </h1>
         <form onSubmit={(e) => this.props.StartHandler(e,this.state.name,this.state.email)}>
@@ -25,7 +25,9 @@ export default class QuizEntry extends Component {
           Email:
           <input type="text" value={this.state.email} onChange={(e) =>  this.setState({email: e.target.value})} />
         </label>
-        <input type="submit" value="Submit" />
+        <div  style={{display:"flex",justifyContent:"center"}}>
+        <input className='s' type="submit" value="Start Quiz" />
+        </div>
       </form>
       </div>
     )

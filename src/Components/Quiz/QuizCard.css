@@ -170,3 +170,30 @@ align-items: center;
 margin: 0 50px;
 color: white;
 }
+
+#thanku{
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 96px;
+line-height: 117px;
+/* identical to box height */
+color: #FFFFFF;
+
+}
+#subtext{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.quiz-container label{
+  color: white;
+}

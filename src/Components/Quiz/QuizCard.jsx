@@ -1,5 +1,6 @@
 import React, { Component, button,alert } from 'react'
 import './QuizCard.css'
+import axios from 'axios';
 export default class QuizCard extends Component {
     
 
@@ -175,6 +176,8 @@ export default class QuizCard extends Component {
         if((this.state.current+1)!=this.state.last){
             this.setState({current: this.state.current+1})
         }
+        let div = document.getElementById('scl');       
+        div.scrollLeft += 20;
         let i =this.state.current + 1;
         this.setState({
             SelectedA: false,
@@ -224,6 +227,8 @@ export default class QuizCard extends Component {
         if((this.state.current-1)>=0){
             this.setState({current: this.state.current-1})
         }
+        let div = document.getElementById('scl');       
+        div.scrollLeft-= 20;
         let i =this.state.current - 1;
         this.setState({
             SelectedA: false,
@@ -289,39 +294,27 @@ export default class QuizCard extends Component {
 
         };
         console.log(JSON.stringify(Data2))
-        fetch('https://dyplibmaster.000webhostapp.com/Dhruva/InsertScore.php', {
-            method: "POST",
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json',
-              'Cache-Control': 'no-cache'
-            },
-            mode:'cors',
-            body: JSON.stringify(Data2)
-           
-          })
-          .then(response => response.json())
-          .then(responseJson => {
-            console.log(responseJson);
-            //   this.setState({
-            //       data: JSON.stringify(json)
-            //     });
-              //   Alert.alert(this.state.data);
-            //   setTimeout(function(){
-            //       alert("You can start Quiz"); 
-            //  }, 1000);
-               
-            return responseJson.data;
+        // axios.post('https://dyplibmaster.000webhostapp.com/Dhruva/InsertScore.php',Data2);
+        const headers = {
+            'Content-Type': 'text/plain'
+        };
+    
+        axios.post(
+            'https://dyplibmaster.000webhostapp.com/Dhruva/InsertScore.php',
+            JSON.stringify(Data2),
+            {headers}
+            ).then(response => {
+                console.log("Success ========>", response);
+            })
+            .catch(error => {
+                console.log("Error ========>", error);
+            }
+        )
   
-          })
-          .catch((error) => {
-            //   alert("Invalid Data");
-            console.error(error);
-          });
 
 
 
-
+        this.props.EndHandler();
         console.log("score:"+ score)
     }
     let current = this.state.current;
@@ -344,7 +337,7 @@ export default class QuizCard extends Component {
             <button className="opt4 opt" style={{backgroundColor: (this.state.SelectedD===true ? 'red' :'') }} onClick={() => AnsHandler('D',current)}><span>D : {this.state.optionD[current]}</span></button>
         </div>
         <div className="bottom">
-        <div className="pagi">
+        <div className="pagi" id='scl'>
             {myArray.map((item,index) => <button className='pag-no' onClick={() => QuesHandler(index)} style={{backgroundColor: (index===this.state.current ? "red" : "transparent")  }}>{item}</button>)}
 
         </div>
