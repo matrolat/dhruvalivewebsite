@@ -78,6 +78,7 @@ img#logonav{
     text-align: center;
     padding: 16px 0;
     margin-top: 15px;
+    z-index: 1;
    }
    .menu li:hover {
     display: inline-block;
@@ -89,6 +90,7 @@ img#logonav{
    }
    input[type=checkbox]:checked ~ .menu{
     display: block;
+    /* z-index: 1; */
    }
    .hamburger {
     display: block;
