@@ -12,7 +12,7 @@ export default class QuizEnd extends Component {
 
         render() {
     return (
-      <div className='quiz-container' style={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:'column'}}>
+      <div className='quiz-container end-card' style={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:'column'}}>
         <h1 id='thanku'>
 THANK YOU !        
 </h1>

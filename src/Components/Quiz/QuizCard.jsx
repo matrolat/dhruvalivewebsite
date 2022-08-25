@@ -324,7 +324,7 @@ export default class QuizCard extends Component {
             <button className="nav-btn" onClick={PrevHandler}><span>Previous</span></button>
             <button className="nav-btn" onClick={NextHandler}><span>Next</span></button>
         </div>
-        <div className="ques-container">
+        <div className="ques-container q-card">
             <div className="q-no">Question Number : {this.state.current+1}</div>
             <div className="ques">Question : {this.state.ques[current]}</div>
         </div>

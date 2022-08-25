@@ -189,11 +189,63 @@ font-style: normal;
 font-weight: 600;
 font-size: 18px;
 line-height: 22px;
-/* identical to box height */
-
-
 color: #FFFFFF;
 }
 .quiz-container label{
   color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .quiz-container{
+    max-width: 90%;   
+    justify-content: flex-start !important;
+    align-items: center;
+    padding: 20px;
+    
+    /* text-align: center; */
+  }
+  .quiz-container h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20vw;
+    line-height: 1px;
+  }
+  .quiz-container form{
+    width: 90%;
+  }
+  .q-no{
+    font-size: 25px;
+    width: 80%;
+  }
+  .ques{
+    font-size: 25px;
+    width: 80%;
+  }
+  .q-card{
+    padding: 0;
+    margin-top: 30px;
+    height: 170px;
+  }
+  .opt-container{
+    flex-direction: column;
+
+    height: 130px;
+  }
+  .opt{
+    margin-bottom: 10px;
+    max-height: 40px;
+    /* min-width: 60vw; */
+    max-width: 70vw;
+    justify-content: center;
+  }
+  .quiz-container .bottom{
+    margin: 40px;
+  }
+  .pagi{
+    display: none;
+  }
+  .end-card{
+    justify-content: center !important; 
+    align-items: center !important;
+  }
 }
