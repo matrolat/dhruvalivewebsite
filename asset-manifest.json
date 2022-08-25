@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b19d4e3.css",
-    "main.js": "/static/js/main.3d5cc57b.js",
+    "main.css": "/static/css/main.cd211f72.css",
+    "main.js": "/static/js/main.0e9d8d14.js",
     "static/js/787.33bbf241.chunk.js": "/static/js/787.33bbf241.chunk.js",
     "static/media/MEMBERS SPECIAL DISCOUNT (1).jpg": "/static/media/MEMBERS SPECIAL DISCOUNT (1).f53db543a9b76099a79f.jpg",
     "static/media/DHRUVA BANNER.jpg": "/static/media/DHRUVA BANNER.be7027a854517d88f71b.jpg",
@@ -16,12 +16,12 @@
     "static/media/Add_a_heading__4_-removebg-preview2.png": "/static/media/Add_a_heading__4_-removebg-preview2.9756e852e9ee4f977cb1.png",
     "static/media/EVENTST2.png": "/static/media/EVENTST2.ac0d69e02773ccbf28ac.png",
     "index.html": "/index.html",
-    "main.2b19d4e3.css.map": "/static/css/main.2b19d4e3.css.map",
-    "main.3d5cc57b.js.map": "/static/js/main.3d5cc57b.js.map",
+    "main.cd211f72.css.map": "/static/css/main.cd211f72.css.map",
+    "main.0e9d8d14.js.map": "/static/js/main.0e9d8d14.js.map",
     "787.33bbf241.chunk.js.map": "/static/js/787.33bbf241.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b19d4e3.css",
-    "static/js/main.3d5cc57b.js"
+    "static/css/main.cd211f72.css",
+    "static/js/main.0e9d8d14.js"
   ]
 }
