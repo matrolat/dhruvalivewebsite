@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.cd211f72.css",
-    "main.js": "/static/js/main.0e9d8d14.js",
+    "main.css": "/static/css/main.b88fa64d.css",
+    "main.js": "/static/js/main.6f73e130.js",
     "static/js/787.33bbf241.chunk.js": "/static/js/787.33bbf241.chunk.js",
+    "static/media/quizbg.png": "/static/media/quizbg.06429a4133812cda8b2f.png",
     "static/media/MEMBERS SPECIAL DISCOUNT (1).jpg": "/static/media/MEMBERS SPECIAL DISCOUNT (1).f53db543a9b76099a79f.jpg",
     "static/media/DHRUVA BANNER.jpg": "/static/media/DHRUVA BANNER.be7027a854517d88f71b.jpg",
     "static/media/batchf.png": "/static/media/batchf.c0955691812b1cb8943f.png",
@@ -16,12 +17,12 @@
     "static/media/Add_a_heading__4_-removebg-preview2.png": "/static/media/Add_a_heading__4_-removebg-preview2.9756e852e9ee4f977cb1.png",
     "static/media/EVENTST2.png": "/static/media/EVENTST2.ac0d69e02773ccbf28ac.png",
     "index.html": "/index.html",
-    "main.cd211f72.css.map": "/static/css/main.cd211f72.css.map",
-    "main.0e9d8d14.js.map": "/static/js/main.0e9d8d14.js.map",
+    "main.b88fa64d.css.map": "/static/css/main.b88fa64d.css.map",
+    "main.6f73e130.js.map": "/static/js/main.6f73e130.js.map",
     "787.33bbf241.chunk.js.map": "/static/js/787.33bbf241.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd211f72.css",
-    "static/js/main.0e9d8d14.js"
+    "static/css/main.b88fa64d.css",
+    "static/js/main.6f73e130.js"
   ]
 }
