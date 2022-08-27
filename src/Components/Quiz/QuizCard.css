@@ -1,11 +1,12 @@
 .quiz-container{
     width: 1206px;
     height: 645px;
-    background: linear-gradient(145.36deg, rgba(244, 244, 244, 0.4) -4.23%, rgba(244, 244, 244, 0.2) 102.58%);
+    background: linear-gradient(145.36deg, rgba(244, 244, 244, 0.2) -4.23%, rgba(244, 244, 244, 0) 102.58%);
     backdrop-filter: blur(20px);
     /* Note: backdrop-filter has minimal browser support */
     margin: 40px;
     border-radius: 50px;
+    border: 0.5px solid white;
 }
 .nav-btn-container{
     display: flex;
@@ -22,6 +23,11 @@
     border-radius: 20px;
     margin: 0 20px 0 0;
 }
+.nav-btn:hover {
+    background-color: blueviolet; 
+    color: red;
+}
+
 
 .nav-btn span{
     font-family: 'Montserrat';
@@ -31,13 +37,14 @@
     line-height: 22px;
     color: #FFFFFF;
 }
+
 .ques-container{
     width: 100%;
-    height: 35%;
+    min-height: 35%;
+    height: auto;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
-
     padding: 0 135px;
 }
 .q-no{
@@ -83,13 +90,14 @@ color: #FFFFFF;
     font-family: "JetBrains Mono",monospace;
     height: 48px;
     justify-content: center;
+    /* text-align: center; */
     line-height: 1;
     list-style: none;
     overflow: hidden;
     padding-left: 16px;
     padding-right: 16px;
     position: relative;
-    text-align: left;
+    text-align:center;
     text-decoration: none;
     transition: box-shadow .15s,transform .15s;
     user-select: none;
@@ -117,13 +125,15 @@ height: 54px;
   }
 
 .opt span{
-    width: 90px;
+    width: auto;
     height: 33px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 33px;
+    text-align: center;
+    /* background-color: red; */
     /* identical to box height */
     color: #000000;    
 }
@@ -167,7 +177,7 @@ border-radius: 100px;
 display: flex;
 justify-content: center;
 align-items: center;
-margin: 0 50px;
+margin: 0 10px;
 color: white;
 }
 
@@ -194,13 +204,69 @@ color: #FFFFFF;
 .quiz-container label{
   color: white;
 }
+.bn632-hover {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  /* margin: 20px; */
+  margin: 5px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
 
-@media screen and (max-width: 800px) {
+.bn632-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn27 {
+  background-image: linear-gradient(
+    to right,
+    #ed6ea0,
+    #ec8c69,
+    #f7186a,
+    #fbb03b
+  );
+  box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+.count{
+  display: flex;
+}
+.submit-container
+{
+  display: flex;
+
+}
+
+@media screen and (max-width: 600px) {
+  .nav-btn-container{
+    justify-content: center;
+    padding: 0;
+    padding-left: 18px;
+  }
   .quiz-container{
-    max-width: 90%;   
+    max-width: 95%;   
     justify-content: flex-start !important;
     align-items: center;
     padding: 20px;
+    height: auto;
+    min-height: 645px;
     
     /* text-align: center; */
   }
@@ -214,12 +280,14 @@ color: #FFFFFF;
     width: 90%;
   }
   .q-no{
-    font-size: 25px;
+    font-size: 23px;
     width: 80%;
+    margin-bottom: 10px;
   }
   .ques{
-    font-size: 25px;
+    font-size: 23px;
     width: 80%;
+    /* margin-bottom: 10px; */
   }
   .q-card{
     padding: 0;
@@ -235,11 +303,11 @@ color: #FFFFFF;
     margin-bottom: 10px;
     max-height: 40px;
     /* min-width: 60vw; */
-    max-width: 70vw;
+    max-width: 80vw;
     justify-content: center;
   }
   .quiz-container .bottom{
-    margin: 40px;
+    margin: 0 40px;
   }
   .pagi{
     display: none;
@@ -247,5 +315,19 @@ color: #FFFFFF;
   .end-card{
     justify-content: center !important; 
     align-items: center !important;
+  }
+  .submit-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .ques-container{
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .opt span{
+    font-size: 18px;
   }
 }

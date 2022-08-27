@@ -4,7 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    /* background-color: black; */
+    background: url('../../Assets/IMAGS/quizbg.png');
 }
 
 
@@ -73,15 +74,15 @@
       transition: 0.5s;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 600px) {
     .quiz-container{
-      max-width: 90%;   
+      min-width: 93%;   
       justify-content: flex-start;
       align-items: center;
-      padding: 20px;
+      padding: 10px;
     }
     #thanku{
-      font-size: 40px;
+      font-size: 35px;
     }
     form .s{
         /* margin-top: 50px; */
@@ -89,4 +90,5 @@
         max-width: 200px;
         margin-top: 18%;
     }
+
   }

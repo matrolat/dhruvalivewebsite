@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import QuizCard from '../../Components/Quiz/QuizCard'
 import QuizEntry from '../../Components/Quiz/QuizEntry';
 import QuizEnd from '../../Components/Quiz/QuizEnd'
+
 import './Quiz.css'
 export default class Quiz extends Component {
   constructor(props){  
@@ -27,6 +28,7 @@ export default class Quiz extends Component {
     return (
       <div>
         <div className="quiz-page">
+       
           {
            ((this.state.start==false)&&(this.state.end==false))
            ?   <QuizEntry StartHandler={StartHandler} />
