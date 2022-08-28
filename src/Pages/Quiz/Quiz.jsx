@@ -2,8 +2,10 @@ import React, { Component } from 'react'
 import QuizCard from '../../Components/Quiz/QuizCard'
 import QuizEntry from '../../Components/Quiz/QuizEntry';
 import QuizEnd from '../../Components/Quiz/QuizEnd'
-
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Quiz.css'
+import { Toast } from 'react-bootstrap';
 export default class Quiz extends Component {
   constructor(props){  
     super(props);  
@@ -14,11 +16,23 @@ export default class Quiz extends Component {
          end:false
       }
     }
+    
     render() {
     const StartHandler = (e,name,email)=>{
       e.preventDefault();
-      this.setState({start: true, name: name,email: email});
-      console.log(name + " " + email)
+      if(name=="")
+      {
+        toast("Pls fill the Name")
+      }
+      if(email=="")
+      {
+        toast("Pls fill the Email")
+      }
+      if(name!="" && email!=""){
+
+        this.setState({start: true, name: name,email: email});
+        console.log(name + " " + email)
+      }
     }
     const EndHandler = (e)=>{
 
